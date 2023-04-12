@@ -17,3 +17,22 @@ app = Flask(__name__)
 def main():
     return 'OK'
 
+@app.route('/webhook', methods=["POST", "GET"])
+def hello():
+    if request.method == 'GET':
+        return 'hi from Python2022I'
+    elif request.method == "POST":
+        data = request.get_json(force = True)
+        
+        dp: Dispatcher = Dispatcher(bot, update_queue=None, workers=0)
+        update:Update = Update.de_json(data, bot)
+    
+        #update 
+                
+        dp.add_handler(CommandHandler("start",start))
+        dp.add_handler(CallbackQueryHandler(menu))
+
+
+        
+        dp.process_update(update)
+        return 'ok'
