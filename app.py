@@ -17,9 +17,6 @@ app = Flask(__name__)
 def main():
     return 'OK'
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 @app.route('/webhook', methods=["POST", "GET"])
 def hello():
     if request.method == 'GET':
