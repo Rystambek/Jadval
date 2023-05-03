@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandle
 from handler import start,menu
 
 
-TOKEN='6198972222:AAFMAYd6f3bJFSh-1FA6ZnqdZTtAIRhbjyE'
+TOKEN='6162217632:AAEnncQeDNHOnSCAlMw0PTxbkJpAQQdL2X4'
 
 
 updater = Updater(token=TOKEN)

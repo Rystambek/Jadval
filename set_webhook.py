@@ -1,9 +1,9 @@
 import requests
 import os
 
-url = 'https://rystam.pythonanywhere.com/webhook'
+url = 'https://darsjadvali2023.pythonanywhere.com/webhook'
 
-Token = '6198972222:AAFMAYd6f3bJFSh-1FA6ZnqdZTtAIRhbjyE'
+Token = '6162217632:AAEnncQeDNHOnSCAlMw0PTxbkJpAQQdL2X4'
 
 payload = {
     "url":url
